@@ -9,10 +9,6 @@ import { DraftIndex } from "./apps/mail/views/DraftIndex.jsx"
 import { Route, Routes } from "react-router-dom"
 
 
-
-
-
-
 export function RootCmp() {
     return (
         <section className="app container">
