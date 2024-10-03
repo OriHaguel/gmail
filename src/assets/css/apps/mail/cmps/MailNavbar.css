@@ -1,0 +1,174 @@
+:root {
+    --bg-nav: #f6f8fc;
+    --webkit-box-shadow: inset 0 -1px 0 0 rgba(100, 121, 143, .12);
+}
+
+.mail-main {
+    margin-left: 3.9rem;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.input-container {
+    position: relative;
+    padding-left: 12.15rem;
+}
+
+
+.navbar {
+    width: 4rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-nav);
+    transition: width 200ms ease;
+    z-index: 1;
+    padding-top: 4.5rem;
+    padding-right: .4rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    text-decoration: none;
+    padding-left: 1.3rem;
+    /* Add left padding to create space for the icon */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start;
+    /* Change to flex-start instead of start for better browser compatibility */
+}
+
+.nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.link-text {
+    margin-left: .5rem;
+    display: none;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.nav-link svg {
+    /* margin-left: .77rem; */
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    /* Add min-width to prevent icon from shrinking */
+}
+
+.class-count,
+.read-count {
+    margin-left: auto;
+    display: none;
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #A5A8AC;
+}
+
+.read-count,
+.inbox {
+    color: #001D35;
+    font-weight: bold;
+}
+
+.navbar-nav> :first-child {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 4rem;
+    background-color: #c2e7ff;
+    border-radius: 16px;
+    align-self: start;
+    margin-bottom: 1rem;
+}
+
+.navbar-nav> :nth-child(2) {
+    cursor: pointer;
+    background-color: #D3E3FD;
+    border-radius: 50px;
+    align-self: start;
+    max-width: 100%;
+}
+
+.navbar:hover .navbar-nav {
+    width: 95%;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .navbar-nav> :first-child {
+    width: 60%;
+}
+
+.navbar:hover .link-text {
+    display: inline-block;
+    /* Change to inline-block for better alignment */
+    margin-left: 0.5rem;
+    /* Add left margin to create space between icon and text */
+}
+
+.navbar:hover .read-count,
+.navbar:hover .class-count {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.filter {
+    background-color: var(--bg-nav);
+    font-size: .0.875rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.filter img {
+    width: 109px;
+    height: auto;
+    z-index: 1000;
+}
+
+.filter input {
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    height: 46px;
+    color: black;
+    margin-right: 5rem;
+    width: 35rem;
+    background-color: #EAF1FB;
+    padding-left: 40px;
+}
+
+.filter select {
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    height: 45%;
+    margin-right: 1rem;
+    text-align: center;
+    width: 5rem;
+}
+
+.filter svg {
+    position: absolute;
+    margin-left: .5rem;
+    bottom: 11px;
+}
