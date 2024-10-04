@@ -12,6 +12,9 @@ import { Route, Routes } from "react-router-dom"
 export function RootCmp() {
     return (
         <section className="app container">
+            {/* <form className="filter">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_rtl_r5.png" alt="" />
+            </form> */}
             <Routes>
                 <Route path="/" element={<MailIndex />} />
                 <Route path="/mail/:mailId" element={<MailDetails />} />

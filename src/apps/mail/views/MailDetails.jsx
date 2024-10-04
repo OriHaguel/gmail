@@ -65,6 +65,9 @@ export function MailDetails() {
     return (
         <div>
             <MailNavbar setIsShowReviewModal={setIsShowReviewModal} mails={mails} />
+            <form className="filter">
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_rtl_r5.png" alt="" />
+            </form>
             <div className="mail-details-container">
                 <div className="mail-details-icons">
                     <div className="mail-go-back " onClick={onGoBack}><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#444746"><path d="M0 0h24v24H0V0z" fill="none" /><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" /></svg></div>
@@ -74,6 +77,7 @@ export function MailDetails() {
                 </div>
                 <span className="mail-detail-span-sub">subject: {subject}</span>
                 <div className="mail-date-from-container">
+
                     <span>{from}</span>
                     <span> sent at:{dateDetails.year < 2024 ? dateDetails.year : `${dateDetails.monthName}  ${dateDetails.day}`} </span>
                 </div>

@@ -15,7 +15,8 @@
      cursor: pointer;
      box-shadow: var(--webkit-box-shadow);
      height: 20px;
-     width: calc(100vw - 4rem);
+     width: calc(100vw - 4.2rem);
+
 
  }
 
