@@ -15,7 +15,7 @@
      cursor: pointer;
      box-shadow: var(--webkit-box-shadow);
      height: 20px;
-     width: calc(100vw - 4.2rem);
+     width: calc(100vw - 5.7rem);
 
 
  }
@@ -62,9 +62,8 @@
  .text-container {
      width: 100%;
      display: flex;
-     justify-content: start;
+     justify-content: flex-start;
      align-items: center;
-
  }
 
  .text-container .span-text {
@@ -88,8 +87,8 @@
  }
 
  .text-container .from {
-     margin-right: 3rem;
-
+     min-width: 130px;
+     /* Adjust this value as needed */
  }
 
  .text-container .span-date {

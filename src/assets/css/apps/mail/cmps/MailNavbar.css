@@ -7,6 +7,7 @@
     margin-left: 3.9rem;
     font-size: 14px;
     font-family: sans-serif;
+    min-height: 100vh;
 }
 
 .input-container {

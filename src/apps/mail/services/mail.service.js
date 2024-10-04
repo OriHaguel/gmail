@@ -249,7 +249,7 @@ function _createEmail() {
 
         sentAt: utilService.getRandomTimestamp(),
         removedAt: null,
-        from: 'momo@momo.com',
+        from: utilService.getRandomEmailUsername(),
         to: 'user@appsus.com'
     }
 }
@@ -258,7 +258,7 @@ function _createEmails() {
     let mails = storageServiceDb.loadFromStorage(KEY)
     if (!mails || !mails.length) {
         mails = []
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 30; i++) {
             mails.push(_createEmail())
         }
         storageServiceDb.saveToStorage(KEY, mails)

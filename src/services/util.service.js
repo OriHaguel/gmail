@@ -11,6 +11,7 @@ export const utilService = {
     debounce,
     loadFromStorage,
     saveToStorage,
+    getRandomEmailUsername
 }
 
 function makeId(length = 6) {
@@ -130,4 +131,31 @@ function debounce(func, wait = 100) {
         timeout = setTimeout(later, wait)
     }
 }
+
+function getRandomEmailUsername() {
+    const usernames = [
+        'johnDoe',
+        'janeSmith',
+        'user123',
+        'coolUser',
+        'techGuru',
+        'admin',
+        'testUser',
+        'sampleUser',
+        'randomGuy',
+        'awesomeDude',
+        'usernameX',
+        'happyCamper',
+        'userXYZ',
+        'theRealUser',
+        'nameWithNumbers123'
+    ];
+
+    if (usernames.length === 0) {
+        return null; // Return null if the array is empty
+    }
+    const randomIndex = Math.floor(Math.random() * usernames.length);
+    return `@${usernames[randomIndex]}`; // Prepend '@' to the random username
+}
+
 
